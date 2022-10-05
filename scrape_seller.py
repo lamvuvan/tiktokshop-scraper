@@ -100,7 +100,7 @@ def open_browser(category, limit, datas):
     password = datas[1]
     global browser
     # opts.add_argument(f"user-agent=Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Mobile Safari/537.36")
-    opts.add_argument("--user-data-dir=./TikTokShop-Seller-Scrapper/")
+    opts.add_argument("--user-data-dir=./data/")
     opts.add_argument(f'--profile-directory={email}')
     browser = webdriver.Chrome(options=opts, desired_capabilities=dc)
 
