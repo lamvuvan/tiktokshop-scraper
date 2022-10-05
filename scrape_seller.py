@@ -58,7 +58,7 @@ def xpath_fast(el):
     return browser.execute_script("arguments[0].click();", element_all)
 
 
-def scrape(cathegory, limit):
+def scrape(category, limit):
     try:
         xpath_el('//*[@class="m4b-base-btn m4b-base-btn-primary m4b-base-btn-size-default m4b-base-btn-shape-square"]')
     except:
@@ -72,7 +72,7 @@ def scrape(cathegory, limit):
     sleep(1)
     xpath_el('//button[@elementtiming="element-timing"]')
     sleep(1)
-    xpath_type('//input[@class="arco-input-tag-input arco-input-tag-input-size-large"]', cathegory)
+    xpath_type('//input[@class="arco-input-tag-input arco-input-tag-input-size-large"]', category)
     sleep(1)
     xpath_type('//input[@class="arco-input-tag-input arco-input-tag-input-size-large"]', Keys.ENTER)
     sleep(1)
